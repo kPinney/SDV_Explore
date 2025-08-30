@@ -1,0 +1,35 @@
+# Virtual Environment
+.venv/
+venv/
+__pycache__/
+.ropeproject/
+
+# Data files (if they are large or sensitive)
+data/*.csv
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python cache
+*.pyc
+
+# IDE files
+.idea/
+.vscode/
+
+# Reports and outputs
+reports/
+*.json
+*.png
+
+# Old files
+old/
+
+# metadata
+metadata/
+
+# Mac
+.DS_Store
+
+#sensitive
+sw-plan.md
