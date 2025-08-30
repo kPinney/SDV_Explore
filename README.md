@@ -7,6 +7,12 @@ This project is an exploratory setup for the Synthetic Data Vault (SDV) library.
 ## Project Structure
 
 ```
+├── .gitignore
+├── main.py
+├── poetry.lock
+├── pyproject.toml
+├── README.md
+├── requirements.txt
 ├── data/
 │   └── sample_data.csv
 ├── metadata/
@@ -16,19 +22,15 @@ This project is an exploratory setup for the Synthetic Data Vault (SDV) library.
 ├── src/
 │   ├── constraints.py
 │   ├── data_loader.py
+│   ├── evaluation.py
 │   ├── selection.py
-│   ├── synthesizer.py
-│   └── evaluation.py
+│   └── synthesizer.py
 ├── tests/
 │   ├── test_constraints.py
 │   ├── test_data_loader.py
 │   ├── test_evaluation.py
+│   ├── test_selection.py
 │   └── test_synthesizer.py
-├── .gitignore
-├── main.py
-├── pyproject.toml
-├── README.md
-└── requirements.txt
 ```
 
 ## Features
