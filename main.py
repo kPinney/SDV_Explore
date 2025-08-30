@@ -9,7 +9,7 @@ def main():
     """
     # Opt-in to future behavior for pandas
     pd.set_option('future.no_silent_downcasting', True)
-    
+
     # Load data
     real_data = load_single_table_data('data/sample_data.csv')
 
@@ -20,13 +20,17 @@ def main():
     for synthesizer, score in all_scores.items():
         print(f"- {synthesizer}: {score:.4f}")
 
-    print(f"\nBest synthesizer: {best_synthesizer}")
-    print(f"Quality score: {best_report.get_score():.4f}")
+    if best_synthesizer:
+        print(f"\nBest synthesizer: {best_synthesizer}")
+        if best_report:
+            print(f"Quality score: {best_report.get_score():.4f}")
 
-    # Plot distributions
-    print("\nGenerating distribution plots for the best model...")
-    plot_all_column_distributions(real_data, best_synthetic_data, save_dir='reports')
-    print("Plots saved to the 'reports' directory.")
+        # Plot distributions
+        print("\nGenerating distribution plots for the best model...")
+        plot_all_column_distributions(real_data, best_synthetic_data, save_dir='reports')
+        print("Plots saved to the 'reports' directory.")
+    else:
+        print("\nNo best synthesizer could be determined.")
 
 if __name__ == '__main__':
     main()
