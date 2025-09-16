@@ -83,3 +83,13 @@ To run the tests, use `pytest` from the root directory:
 ```bash
 pytest
 ```
+
+#TODO:
+1.  Implement a function to generate a quality report for each synthesizer.
+2.  Implement a function to plot column distributions for the synthetic data.
+3.  Implement a function to compare correlation matrices between the original and synthetic data.
+4.  Implement a function to visualize PCA plots for the synthetic data.
+5.  Implement a function to compare the distribution of categorical variables between the original and synthetic data.
+6.  Implement a function to compare the distribution of numerical variables between the original and synthetic data.
+7.  Implement a function to compare the distribution of mixed variables between the original and synthetic data.
+8.  Implement a function to compare the distribution of all variables between the original and synthetic data.
