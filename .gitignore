@@ -3,6 +3,7 @@
 venv/
 __pycache__/
 .ropeproject/
+.python-version
 
 # Data files (if they are large or sensitive)
 data/*.csv
@@ -16,6 +17,7 @@ data/*.csv
 # IDE files
 .idea/
 .vscode/
+.zed/
 
 # Reports and outputs
 reports/
